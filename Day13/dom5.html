@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dom4</title>
+    </head>
+    <body>
+        <h1>Student Details</h1>
+
+        <h2></h2>
+        <form id="id1" action="/dom6.html" method="post" onsubmit="saveData()">
+            <label>
+                Name:
+            <input type="text" id="name" name="name"/></label>
+
+            <label>StudentID
+                <input type="text" id="sid" name="sid"/>
+            </label>
+            <input type="submit">
+        </form>
+        
+        <script>
+
+            function saveData(){
+                localStorage.setItem("name",document.getElementById("name").value);
+                localStorage.setItem("sid", document.getElementById("sid").value);
+            }
+            
+        </script>
+    </body>
+</html>

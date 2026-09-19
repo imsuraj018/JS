@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dom6</title>
+    </head>
+    <body>
+        <h1></h1>
+
+        
+        <script>
+            const name=localStorage.getItem("name");
+            const sid=localStorage.getItem("sid");
+
+            if(name && sid){
+                const h1=document.getElementsByTagName("h1");
+                h1[0].textContent="Hello " + name + " ur id is "+sid;
+            }else{
+                alert("Please enter the data");
+            }
+        </script>
+    </body>
+</html>

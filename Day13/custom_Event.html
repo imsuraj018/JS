@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Custom Event</title>
+    </head>
+
+    <body>
+        <script>
+            const helloEvent=new Event("Say BN");
+            document.addEventListener("Say BN", function(event){
+                const head=document.createElement("h1");
+                document.body.appendChild(head);
+                const textnode=document.createTextNode("Prompt Engineering");
+                head.appendChild(textnode);
+            });
+
+            document.dispatchEvent(helloEvent);
+        </script>
+    </body>
+</html>
