@@ -1,0 +1,63 @@
+
+// Web-API : js and browser interaction
+
+// http build communication b/w client and server
+
+// web api is built on js
+
+// types of web api : browser API-DOM, fetch api, storage API, notification api
+
+// server api : rest api, soap api, GraphQL
+
+// third party api : openweather api, google maps api, twitter api
+
+// dom is kind od web api
+
+
+<!doctype html>
+<html> 
+    <head>
+        <title>dom</title>
+    </head>
+    <body onclick="myFunction()">
+        <p>
+            Hello!!
+        </p>
+        <p></p>
+        <p class="c1"></p>
+
+        <p id="id1"></p>
+
+        <p id="id2"></p>
+
+        <input type="text">
+        <h1></h1>
+        <div></div>
+        <table></table>
+        <form >
+
+        </form>
+
+        <script>const tag = document.getElementsByTagName("p");
+            tag[1].innerHTML = "World";
+
+            const classTag=document.getElementsByClassName("c1");
+            classTag[0].innerHTML="Perpetuality ..";
+
+            const idTag=document.getElementById("id1");
+            idTag.innerHTML="Levitating";
+
+            function myFunction(){
+                const idTag=document.getElementById("id2");
+                const element=document.activeElement.tagName;
+                idTag.innerHTML=element;
+            }
+        </script>
+    </body>
+</html>
+
+// innerHTML : used to add text in tags
+
+
+
+

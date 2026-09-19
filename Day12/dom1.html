@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Dom2
+        </title>
+        <body>
+            <p id="id1"></p>
+            <p id="id2"></p>
+            <script>
+                document.addEventListener("click", function()
+            {
+                document.getElementById("id1").innerHTML="Hi pal";
+            });
+
+            document.body.style.backgroundColor="lightblue";
+
+            const head1=document.createElement("h1");
+            document.body.appendChild(head1);
+
+            const node=document.createTextNode("Mere bhaiyo aur Behano");
+            head1.appendChild(node);
+
+            const selector1=document.querySelector("#id2");
+            selector1.innerHTML="Fortune is not always fortunate";
+            </script>
+        </body>
+    </head>
+</html>

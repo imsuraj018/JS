@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2 id="id1"></h2>
+        <script>
+            const params=new URLSearchParams(Window.location.search);  //THIS use to access the elements listing in url
+
+            const name=params.get("name");
+            const sid=params.get("sid");
+
+            document.getElementById("id1").innerHTML=`Hello ${name}, your id ${sid}`;
+        </script>
+    </body>
+</html>
